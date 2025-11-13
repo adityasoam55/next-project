@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function TopVisitedClient({ posts }) {
   return (
-    <section className="max-w-7xl mx-auto px-6 pb-12 h-[420px] overflow-hidden">
+    <section className="max-w-7xl mx-auto px-6 pb-12">
       <motion.h2
         className="text-3xl font-bold mb-8 text-center"
         initial={{ opacity: 0, y: -20 }}
@@ -38,7 +38,7 @@ export default function TopVisitedClient({ posts }) {
           >
             <Link
               href={`/blog/${post.id}`}
-              className="bg-white rounded-xl shadow-md hover:shadow-2xl transition overflow-hidden block"
+              className="bg-white rounded-xl shadow-md hover:shadow-2xl transition overflow-hidden block h-[300px]"
             >
               <motion.img
                 src={post.photo_url}
