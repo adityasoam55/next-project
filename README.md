@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+📰 Blog Listing App (Next.js + Tailwind CSS)
 
-## Getting Started
+A modern, responsive blog listing web app built using Next.js 14 and Tailwind CSS.
+It fetches real blog data from an external REST API, displays posts in a paginated grid, and allows users to view full details of each post.
 
-First, run the development server:
+🚀 Live Demo
 
-```bash
+🔗 https://next-project-six-lac.vercel.app/
+
+🧩 Features
+
+📄 Fetches blog posts dynamically using SlingAcademy API
+
+🖼️ Displays blogs in a responsive grid layout
+
+🔍 Includes pagination for easy navigation between pages
+
+📚 Blog Details Page with title, image, description, and HTML content rendering
+
+🧭 Global Header and Footer for consistent UI across pages
+
+📱 Fully responsive design using Tailwind CSS
+
+⚡ Deployed on Vercel for fast performance and easy hosting
+
+📁 Project Structure
+
+nex-project/
+├── app/
+│ ├── about/
+│ │ └── page.js # About page
+│ ├── blog/
+│ │ └── [id]/
+│ │ └── page.js # Blog details page
+│ ├── components/
+│ │ ├── BlogCard.jsx
+│ │ ├── Footer.jsx
+│ │ ├── Header.jsx
+│ │ └── Pagination.jsx
+│ ├── globals.css
+│ ├── layout.js # Root layout
+│ └── page.js # Home page (blog listing)
+├── public/
+├── package.json
+└── README.md
+
+⚙️ Installation & Setup
+
+Follow these steps to run the project locally:
+
+# Clone the repository
+
+git clone https://github.com/adityasoam55/next-project
+
+# Navigate into the folder
+
+cd next-project
+
+# Install dependencies
+
+npm install
+
+# Run the development server
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then, open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+🌐 API Source
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The blog data is fetched from the SlingAcademy API:
+GET https://api.slingacademy.com/v1/sample-data/blog-posts
 
-## Learn More
+Each blog detail is fetched by ID:
+GET https://api.slingacademy.com/v1/sample-data/blog-posts/{id}
 
-To learn more about Next.js, take a look at the following resources:
+💅 Styling
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+All components styled using Tailwind CSS
+Responsive grid layout for blog cards
+Typography enhanced using the @tailwindcss/typography plugin (prose classes)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🚀 Deployment
 
-## Deploy on Vercel
+Deployed using Vercel:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#1 Push your code to GitHub.
+#2 Import the repo into your Vercel dashboard.
+#3 Click Deploy — that’s it!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+👨‍💻 Author
+
+Aditya Som
+Frontend Developer
+🌐 https://aditya-som.netlify.app
+📧 adityasoam55@gmail.com
