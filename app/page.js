@@ -1,5 +1,6 @@
 import BlogCard from "./components/BlogCard";
 import Pagination from "./components/Pagination";
+import TopVisited from "./components/TopVisited";
 
 // Function to fetch blog posts
 async function getPosts(page = 1) {
@@ -28,6 +29,7 @@ export default async function HomePage({ searchParams }) {
 
   return (
     <div className="px-6 py-10 max-w-7xl mx-auto">
+      <TopVisited />
       <h1 className="text-4xl font-bold mb-8 text-center">Latest Blog Posts</h1>
 
       {/* Blog grid */}
